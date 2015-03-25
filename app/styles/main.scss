@@ -1,0 +1,101 @@
+/*****************************************************************************
+  responsive-design
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+/*  Common question: Where are those target numbers coming from?
+    Answer: I was giving a hypothetical example, converting a fixed pixel width
+            design to a porportional/relative units. 
+            If you need help, shoot me an email :)!
+*/
+
+// target ÷ context = result
+// 78px ÷ 24px = 3.25em
+// 15px ÷ 24px = 0.625em
+// 320px ÷ 960px = 0.3333 * 100 = 33.3333%
+
+
+/*****************************************************************************
+  Variables
+******************************************************************************/
+$shamrock-green: #2ECC71;
+$bluewood-blue: #34495E;
+$jaffa-orange: #F27935;
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+html {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+.hero {
+  display: none;
+  background-color: $shamrock-green;
+  text-align: center;
+}
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+.news {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  html {
+    font-size: 18px;
+  }
+  .news {
+    width: 50%;
+    background-color: $bluewood-blue;
+  }
+  .hero {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .news {
+    width: 33.33333%;
+    background-color: $jaffa-orange;
+  }
+}
+
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+.news {
+  border: 1px solid white;
+  padding: 0.625em;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
