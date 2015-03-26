@@ -1,3 +1,3 @@
-# responsive-design
+# [FED] Week 6 - Responsive Web Design Lecture
 
-You should put a description of your project here, plus any setup instructions for other developers, if necessary.
+This is the code from the in-class lecture. Feel free to clone or fork this repository for your own reference.
